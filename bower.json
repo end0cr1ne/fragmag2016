@@ -1,0 +1,25 @@
+{
+  "name": "fragmag2016",
+  "authors": [
+    "end0cr1ne <f.warren210@gmail.com>"
+  ],
+  "description": "emag for fragmag2016",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "fragmag"
+  ],
+  "license": "MIT",
+  "homepage": "fragmag.gq",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullpage.js": "fullpage#~2.7.7"
+  }
+}
