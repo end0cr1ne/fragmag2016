@@ -5,6 +5,9 @@
     <title>Fragmag 2016</title>
     <link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullPage.css">
     <style>
+        body {
+            font-family: sans-serif;
+        }
         .line {
             position: absolute;
             top: 50%;
@@ -19,9 +22,9 @@
 
         .articles {
             display: flex;
+            max-width: 90%;
             flex-direction: column;
             justify-content: space-around;
-            align-items: center;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -33,7 +36,7 @@
         .article {
             background: white;
             min-height: 5%;
-            display: inline-block;
+            display: inline-block;;
             box-shadow: 0px 2px 5px #444444;
         }
 
@@ -43,16 +46,32 @@
         }
 
         .left {
-            margin-right: 15%;
+            margin-right:  52%;
+            margin-left: auto;
+        }
+
+        .left img {
+            margin-left: 5px;
+            float: right;
         }
 
         .right {
-            margin-left: 15%;
+          margin-right:  auto;
+          margin-left: 52%;
         }
 
+        .right img {
+            margin-right: 5px;
+            float: left;
+        }
         .slide {
             position: relative;
         }
+        .large-article {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         #section0{
           background-image: url("http://lukaesenko.com/wp-content/uploads/2014/12/20140923_A2A10995-Panorama-copy.jpg");
                             #padding: 30% 0 0 0;
@@ -68,6 +87,13 @@
           #padding: 30% 0 0 0;
         }
 
+        .large-text {
+          float:left;
+          display:inline-block;
+          max-width:40%;
+          margin-left: 5%;
+          margin-top: 2%;
+        }
     </style>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
@@ -88,7 +114,11 @@
             <div class="articles">
                 <div class="article left">
                     <img src="http://loremflickr.com/320/240?random=1"/>
-                    <div>The Last Stop</div>
+                    <div>The Last Stop ifhjfjdbrufjeb fdbjfdnj fdbfjdnkd sdkvbbvhsjdbckjkd jjdhf j alt="dfhdb
+                      dfdjbfih of 'f
+                      gfdkjfbufnjdhffhoirggf
+                      vffjgiojgioduqjrporkhoerjfioif'"</div>
+
                 </div>
                 <div class="article right">
                     <img src="http://loremflickr.com/320/240?random=2"/>
@@ -105,11 +135,11 @@
             </div>
         </div>
         <div class="slide">
-            <div class="article" style="position: absolute;left: 40%">
+            <div class="large-article">
+                <div class="large-text">
                 <img src="http://loremflickr.com/320/240?random=1"/>
                 <div>THE LAST STOP</div>
-            </div>
-            <div>No. 201, 10.25 A.M. The same old morning hustle for Faizal began. Taking his usual place by the window, he closed his eyes in
+            No. 201, 10.25 A.M. The same old morning hustle for Faizal began. Taking his usual place by the window, he closed his eyes in
 
 pleasure as his curly locks bounced to his favorite Rehman tune. Just then, stumbling in with the crowd came in Ravi. Crisp shirt neatly
 
@@ -145,9 +175,9 @@ some covered in black burns and some in blood. Ravi’s completely burnt body wa
 
 workplace, had now ‘misrouted’. Yamini couldn’t feel her delicate fingers anymore. She lay on the ground her eyes glued to her hand,
 
-that also lay beside her. Faizal lay completely numb. The blast was the last sound he heard.
+that also lay beside her. Faizal lay completely numb. The blast was the last sound he heard.</div>
 
-            Ravi’s mom still blankly stares at the door, hoping he’d burst through it sometime and wrap his arms around her whilst burying
+            <div class="large-text">Ravi’s mom still blankly stares at the door, hoping he’d burst through it sometime and wrap his arms around her whilst burying
 
 his nose into the crook of her neck. Yamini, who once made love to colors, could only see her life in monochrome now. She could neither
 
@@ -158,6 +188,7 @@ embracing his guitar, that is now covered in teardrops. His old Rehman records s
             A single moment. That was all it took to turn so many lives upside down. Isn’t it funny how in a moment we could be as cheerful as
 
 a kid on a Christmas morning and in the next, we could be living our worst nightmares?</div>
+        </div>
         </div>
         <div class="slide">
             <img src="http://loremflickr.com/320/240?random=1"/>
