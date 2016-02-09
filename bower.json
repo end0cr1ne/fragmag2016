@@ -20,6 +20,7 @@
     "tests"
   ],
   "dependencies": {
-    "fullpage.js": "fullpage#~2.7.7"
+    "fullpage.js": "fullpage#~2.7.7",
+    "animate.css": "~3.5.1"
   }
 }
