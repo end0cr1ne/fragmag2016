@@ -5,16 +5,7 @@
     <title>Fragmag 2016</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullPage.css">
-    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <style>
-<<<<<<< HEAD:index1.html
-        @import url(https://fonts.googleapis.com/css?family=Lato:300);
-
-=======
-        body {
-            font-family: sans-serif;
-        }
->>>>>>> ff82f62ebbd2664603edf9ecef690c639ca53502:index.html
         .line {
             position: absolute;
             top: 50%;
@@ -23,15 +14,11 @@
             height: 100%;
         }
 
-        .section{
-		        background-size: cover;
-	      }
-
         .articles {
             display: flex;
-            max-width: 90%;
             flex-direction: column;
             justify-content: space-around;
+            align-items: center;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -43,7 +30,7 @@
         .article {
             background: white;
             min-height: 5%;
-            display: inline-block;;
+            display: inline-block;
             box-shadow: 0px 2px 5px #444444;
         }
 
@@ -53,218 +40,24 @@
         }
 
         .left {
-<<<<<<< HEAD:index1.html
             margin-right: 15%;
-            @apply(bounceInLeft)
         }
 
         .right {
             margin-left: 15%;
-            @apply(bounceInRight)
-=======
-            margin-right:  52%;
-            margin-left: auto;
         }
 
-        .left img {
-            margin-left: 5px;
-            float: right;
-        }
-
-        .right {
-          margin-right:  auto;
-          margin-left: 52%;
->>>>>>> ff82f62ebbd2664603edf9ecef690c639ca53502:index.html
-        }
-
-        .right img {
-            margin-right: 5px;
-            float: left;
-        }
         .slide {
             position: relative;
         }
-        .large-article {
-            margin-left: auto;
-            margin-right: auto;
-        }
 
-<<<<<<< HEAD:index1.html
-        .os-phrases h2 {
-            font-family: 'Dosis', 'Lato', sans-serif;
-            font-size: 70px;
-            font-weight: 200;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            text-transform: uppercase;
-            padding: 0;
-            margin: 0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            letter-spacing: 14px;
-            text-align: center;
-        }
-
-        .os-phrases h2,
-        .os-phrases h2 > span {
-            height: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .prompt {
-            position: absolute;
-            top: 80%;
-            left: 50%;
-            opacity: 0;
-            color: white;
-            transform: translate(-50%, 0%);
-        }
-
-        .os-phrases h2 > span {
-            margin: 0 15px;
-        }
-
-        .os-phrases h2 > span > span {
-            display: inline-block;
-            perspective: 1000px;
-            transform-origin: 50% 50%;
-        }
-
-        @keyframes OpeningSequence {
-            0% {
-                text-shadow: 0 0 50px #fff;
-                letter-spacing: 80px;
-                opacity: 0.2;
-                transform: rotateY(-90deg);
-            }
-            50% {
-                text-shadow: 0 0 1px #fff;
-                letter-spacing: 14px;
-                opacity: 0.8;
-                transform: rotateY(0deg);
-            }
-            85% {
-                text-shadow: 0 0 1px #fff;
-                opacity: 0.8;
-                transform: rotateY(0deg) translateZ(100px);
-            }
-            100% {
-                text-shadow: 0 0 10px #fff;
-                opacity: 0;
-                transform: translateZ(130px);
-                pointer-events: none;
-            }
-        }
-
-        @keyframes OpeningSequence2 {
-            0% {
-                text-shadow: 0 0 50px #fff;
-                letter-spacing: 80px;
-                opacity: 0.2;
-                transform: rotateY(-90deg);
-            }
-            50% {
-                text-shadow: 0 0 1px #fff;
-                letter-spacing: 14px;
-                opacity: 0.7;
-                transform: rotateY(0deg);
-            }
-            100% {
-                text-shadow: 0 0 1px #fff;
-                opacity: 0.8;
-                transform: rotateY(0deg);
-            }
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                opacity: 1.0;
-                transform: translate(-50%, 0%) translateY(0);
-            }
-            40% {
-                opacity: 0.3;
-                transform: translate(-50%, 0%) translateY(-30px);
-            }
-            60% {
-                opacity: 0.5;
-                transform: translate(-50%, 0%) translateY(-15px);
-            }
-        }
-
-        .os-phrases h2 > span > span > span {
-            display: inline-block;
-            color: hsla(0, 0%, 0%, 0);
-            transform-style: preserve-3d;
-            transform: translate3d(0, 0, 0);
-            animation: OpeningSequence 3s linear forwards;
-        }
-
-        .os-phrases h2:nth-child(2) > span > span > span {
-            animation-delay: 4s;
-        }
-
-        .os-phrases h2:nth-child(3) > span > span > span {
-            font-size: 150px;
-            animation: OpeningSequence2 5.2s linear 8s forwards;
-        }
-
-        .prompt {
-            animation: bounce 3s linear 10s infinite;
-=======
-        #section0{
-          background-image: url("http://lukaesenko.com/wp-content/uploads/2014/12/20140923_A2A10995-Panorama-copy.jpg");
-                            #padding: 30% 0 0 0;
-        }
-
-        #section1{
-          background-image: url("http://i.imgur.com/irHqjVA.jpg");
-          #padding: 30% 0 0 0;
-        }
-
-        #section2{
-          background-image: url("https://farm9.staticflickr.com/8747/17675362772_3c622016a7_k.jpg");
-          #padding: 30% 0 0 0;
-        }
-
-        #slide1{
-          background: white;
-        }
-
-        .large-text {
-          float:left;
-          display:inline-block;
-          max-width:40%;
-          margin-left: 5%;
-          margin-top: 2%;
->>>>>>> ff82f62ebbd2664603edf9ecef690c639ca53502:index.html
-        }
     </style>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="lettering.js"></script>
     <script src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
 </head>
 <body>
 <div id="fullpage">
-<<<<<<< HEAD:index1.html
     <div class="section">
-        <div class="os-phrases">
-            <h2>It's everything</h2>
-            <h2>in between nothing</h2>
-            <h2>KAIROS</h2>
-        </div>
-        <svg class="prompt" height="100px" width="100px">
-            <polygon fill="#ffffff" points="23.1,34.1 51.5,61.7 80,34.1 81.5,35 51.5,64.1 21.5,35 23.1,34.1 "></polygon>
-        </svg>
-    </div>
-    <div class="section">
-=======
-    <div class="section" id="section0">
->>>>>>> ff82f62ebbd2664603edf9ecef690c639ca53502:index.html
         <div class="slide">
             <svg class="line">
                 <line x1="50%" x2="50%"
@@ -276,13 +69,10 @@
                 </line>
             </svg>
             <div class="articles">
-
                 <div class="article left">
-                    <a href="#firstPage/1"><img src="http://loremflickr.com/320/240?random=1"/></a>
-                    <div>The Last Stop</div>
-
+                    <img src="http://loremflickr.com/320/240?random=1"/>
+                    <div>Title</div>
                 </div>
-
                 <div class="article right">
                     <img src="http://loremflickr.com/320/240?random=2"/>
                     <div>Title</div>
@@ -297,61 +87,11 @@
                 </div>
             </div>
         </div>
-        <div class="slide" id="slide1">
-            <div class="large-article">
-                <div class="large-text">
+        <div class="slide">
+            <div class="article" style="position: absolute;left: 40%">
                 <img src="http://loremflickr.com/320/240?random=1"/>
-                <div>THE LAST STOP</div>
-            No. 201, 10.25 A.M. The same old morning hustle for Faizal began. Taking his usual place by the window, he closed his eyes in
-
-pleasure as his curly locks bounced to his favorite Rehman tune. Just then, stumbling in with the crowd came in Ravi. Crisp shirt neatly
-
-tucked in, trousers Di picked out, the tie Mom helped him tie and his old man’s golden words- he looked completely ready to usher in a
-
-new phase of life. A little away stood Yamini, tucking her hair behind her ear with the same delicate hands that brought colors to life. She
-
-struggled to hold all her masterpieces together in the fold of her elbow, unlike her determination; pretty rock-ribbed that one!
-
-            With every passing forceful jerk and constant clashing of bodies as the large bucket of bolts made its way through the town, all
-
-three waited in anticipation for what the day had in store for them. The bus halted at the stop they all happened to have in common.
-
-Faizal, as usual, picked up his six-string and rushed to be the first one to step his foot onto the ground. Not looking behind, he began
-
-hastily running towards the studio.  Ravi being the chivalrous man that he always was, gestured Yamini to go ahead first. She looked at
-
-him in gratitude as her lips curled up to her cheeks. She stepped out, in all her grace, gripping her artworks so tight as if her heart only
-
-beat because of them. Following her was Ravi, chinned up and ready to face the first day of his dream job.
-
-</div>
-
-            <div class="large-text">No sooner did the tip of his shoe barely touch the ground, than the horrendous moment arrived. An extremely loud head-splitting
-
-sound, and within a blink of an eye, the bus was engulfed in bright orange-yellow inferno. The place was hauntingly silent the very next
-
-moment, so much that you could feel the loud sound slowly fade away. Looking into the blurry view caused by the thick grey smoke
-
-emerging from the raging fire, one could see the amassed ash covering every object near to the burning vehicle, splintered metal pieces
-
-scattered all over the place and cutting through many human bodies. Bodies. They were everywhere, some whole and some in parts,
-
-some covered in black burns and some in blood. Ravi’s completely burnt body was still. The bus, supposedly taking him to his dream
-
-workplace, had now ‘misrouted’. Yamini couldn’t feel her delicate fingers anymore. She lay on the ground her eyes glued to her hand,
-
-that also lay beside her. Faizal lay completely numb. The blast was the last sound he heard.Ravi’s mom still blankly stares at the door, hoping he’d burst through it sometime and wrap his arms around her whilst burying
-
-his nose into the crook of her neck. Yamini, who once made love to colors, could only see her life in monochrome now. She could neither
-
-bring colors to life anymore, nor could she bring colors to her life anymore. For days, Faizal slept in a foetal position on his bed,
-
-embracing his guitar, that is now covered in teardrops. His old Rehman records still wait to be played.
-
-            A single moment. That was all it took to turn so many lives upside down. Isn’t it funny how in a moment we could be as cheerful as
-
-a kid on a Christmas morning and in the next, we could be living our worst nightmares?</div>
-        </div>
+                <div>Title</div>
+            </div>
         </div>
         <div class="slide">
             <img src="http://loremflickr.com/320/240?random=1"/>
@@ -366,7 +106,7 @@ a kid on a Christmas morning and in the next, we could be living our worst night
             <div>Title</div>
         </div>
     </div>
-    <div class="section" id="section1">
+    <div class="section">
         <div class="slide">
             <svg class="line">
                 <line x1="50%" x2="50%"
@@ -396,7 +136,7 @@ a kid on a Christmas morning and in the next, we could be living our worst night
         <div class="slide">Hey</div>
         <div class="slide">Hey</div>
     </div>
-    <div class="section" id="section2">
+    <div class="section">
         <div class="slide">
             <svg class="line">
                 <line x1="50%" x2="50%"
@@ -528,7 +268,7 @@ a kid on a Christmas morning and in the next, we could be living our worst night
             controlArrows: false,
             verticalCentered: true,
             resize: false,
-            sectionsColor: ['#2a2b30', '#FF5252', '#4CAF50', '#009688', '#673AB7'],
+            sectionsColor: ['#FF5252', '#4CAF50','#009688','#673AB7'],
             paddingTop: '1px',
             paddingBottom: '1px',
             fixedElements: '#header, .footer',
@@ -543,17 +283,8 @@ a kid on a Christmas morning and in the next, we could be living our worst night
             onLeave: function (index, nextIndex, direction) {
             },
             afterLoad: function (anchorLink, index) {
-                var self = $(this);
-                self.find('.line').addClass('animated fadeIn');
-                self.find('.article.left').addClass('animated bounceInLeft');
-                self.find('.article.right').addClass('animated bounceInRight');
-                self.find('.line').show();
-                self.find('.article').show();
             },
             afterRender: function () {
-                var self = $(this);
-                self.find('.line').hide();
-                self.find('.article').hide();
             },
             afterResize: function () {
             },
@@ -562,9 +293,6 @@ a kid on a Christmas morning and in the next, we could be living our worst night
             onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
             }
         });
-
-        $(".os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
-
     });
 </script>
 </body>
