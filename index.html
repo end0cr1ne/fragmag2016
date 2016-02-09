@@ -5,7 +5,10 @@
     <title>Fragmag 2016</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullPage.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <style>
+        @import url(https://fonts.googleapis.com/css?family=Lato:300);
+
         .line {
             position: absolute;
             top: 50%;
@@ -41,22 +44,161 @@
 
         .left {
             margin-right: 15%;
+            @apply(bounceInLeft)
         }
 
         .right {
             margin-left: 15%;
+            @apply(bounceInRight)
         }
 
         .slide {
             position: relative;
         }
 
+        .os-phrases h2 {
+            font-family: 'Dosis', 'Lato', sans-serif;
+            font-size: 70px;
+            font-weight: 200;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            text-transform: uppercase;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            letter-spacing: 14px;
+            text-align: center;
+        }
+
+        .os-phrases h2,
+        .os-phrases h2 > span {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .prompt {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            opacity: 0;
+            color: white;
+            transform: translate(-50%, 0%);
+        }
+
+        .os-phrases h2 > span {
+            margin: 0 15px;
+        }
+
+        .os-phrases h2 > span > span {
+            display: inline-block;
+            perspective: 1000px;
+            transform-origin: 50% 50%;
+        }
+
+        @keyframes OpeningSequence {
+            0% {
+                text-shadow: 0 0 50px #fff;
+                letter-spacing: 80px;
+                opacity: 0.2;
+                transform: rotateY(-90deg);
+            }
+            50% {
+                text-shadow: 0 0 1px #fff;
+                letter-spacing: 14px;
+                opacity: 0.8;
+                transform: rotateY(0deg);
+            }
+            85% {
+                text-shadow: 0 0 1px #fff;
+                opacity: 0.8;
+                transform: rotateY(0deg) translateZ(100px);
+            }
+            100% {
+                text-shadow: 0 0 10px #fff;
+                opacity: 0;
+                transform: translateZ(130px);
+                pointer-events: none;
+            }
+        }
+
+        @keyframes OpeningSequence2 {
+            0% {
+                text-shadow: 0 0 50px #fff;
+                letter-spacing: 80px;
+                opacity: 0.2;
+                transform: rotateY(-90deg);
+            }
+            50% {
+                text-shadow: 0 0 1px #fff;
+                letter-spacing: 14px;
+                opacity: 0.7;
+                transform: rotateY(0deg);
+            }
+            100% {
+                text-shadow: 0 0 1px #fff;
+                opacity: 0.8;
+                transform: rotateY(0deg);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                opacity: 1.0;
+                transform: translate(-50%, 0%) translateY(0);
+            }
+            40% {
+                opacity: 0.3;
+                transform: translate(-50%, 0%) translateY(-30px);
+            }
+            60% {
+                opacity: 0.5;
+                transform: translate(-50%, 0%) translateY(-15px);
+            }
+        }
+
+        .os-phrases h2 > span > span > span {
+            display: inline-block;
+            color: hsla(0, 0%, 0%, 0);
+            transform-style: preserve-3d;
+            transform: translate3d(0, 0, 0);
+            animation: OpeningSequence 3s linear forwards;
+        }
+
+        .os-phrases h2:nth-child(2) > span > span > span {
+            animation-delay: 4s;
+        }
+
+        .os-phrases h2:nth-child(3) > span > span > span {
+            font-size: 150px;
+            animation: OpeningSequence2 5.2s linear 8s forwards;
+        }
+
+        .prompt {
+            animation: bounce 3s linear 10s infinite;
+        }
     </style>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="lettering.js"></script>
     <script src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
 </head>
 <body>
 <div id="fullpage">
+    <div class="section">
+        <div class="os-phrases">
+            <h2>It's everything</h2>
+            <h2>in between nothing</h2>
+            <h2>KAIROS</h2>
+        </div>
+        <svg class="prompt" height="100px" width="100px">
+            <polygon fill="#ffffff" points="23.1,34.1 51.5,61.7 80,34.1 81.5,35 51.5,64.1 21.5,35 23.1,34.1 "></polygon>
+        </svg>
+    </div>
     <div class="section">
         <div class="slide">
             <svg class="line">
@@ -268,7 +410,7 @@
             controlArrows: false,
             verticalCentered: true,
             resize: false,
-            sectionsColor: ['#FF5252', '#4CAF50','#009688','#673AB7'],
+            sectionsColor: ['#2a2b30', '#FF5252', '#4CAF50', '#009688', '#673AB7'],
             paddingTop: '1px',
             paddingBottom: '1px',
             fixedElements: '#header, .footer',
@@ -283,8 +425,17 @@
             onLeave: function (index, nextIndex, direction) {
             },
             afterLoad: function (anchorLink, index) {
+                var self = $(this);
+                self.find('.line').addClass('animated fadeIn');
+                self.find('.article.left').addClass('animated bounceInLeft');
+                self.find('.article.right').addClass('animated bounceInRight');
+                self.find('.line').show();
+                self.find('.article').show();
             },
             afterRender: function () {
+                var self = $(this);
+                self.find('.line').hide();
+                self.find('.article').hide();
             },
             afterResize: function () {
             },
@@ -293,6 +444,9 @@
             onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
             }
         });
+
+        $(".os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
+
     });
 </script>
 </body>
