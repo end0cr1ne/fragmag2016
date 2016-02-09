@@ -18,6 +18,7 @@
         }
 
         .articles {
+            font-family: arial, helvetica, sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -34,6 +35,11 @@
             min-height: 5%;
             display: inline-block;
             box-shadow: 0px 2px 5px #444444;
+        }
+
+        .others{
+            margin-top: 10%;
+            font-family: arial, helvetica, sans-serif;
         }
 
         .article img {
@@ -199,6 +205,10 @@
             bottom: 5%;
             left: 5%;
         }
+        
+        .interesting{
+            margin: 2%;
+        }
     </style>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="lettering.js"></script>
@@ -212,20 +222,33 @@
             <h2>in between nothing</h2>
             <h2>KAIROS</h2>
         </div>
+        <a href="#secondpage">
         <svg class="prompt" height="100px" width="100px">
             <polygon fill="#ffffff" points="23.1,34.1 51.5,61.7 80,34.1 81.5,35 51.5,64.1 21.5,35 23.1,34.1 "></polygon>
-        </svg>
+        </svg></a>
     </div>
-    <div class="section">
+    <div class="section" id="secondpage">
         <div class="main">
-            <img src="http://loremflickr.com/1366/500"/>
+            <img src="images/sk.png"/>
             <div class="title">
                 <h2>Title</h2>
-                An interview with....
+                An interview with Sanjay Kalrani
             </div>
         </div>
+
         <div class="others">
-            Add some more layout!
+            <div class="article interesting"><img src="http://loremflickr.com/320/240?random=1"/>
+                <div>Interesting article 1</div>
+            </div>
+            <div class="article interesting"><img src="http://loremflickr.com/320/240?random=2"/>
+                <div>Interesting article 2</div>
+            </div>
+            <div class="article interesting"><img src="http://loremflickr.com/320/240?random=3"/>
+                <div>Interesting article 3</div>
+            </div>
+            <div class="article interesting"><img src="http://loremflickr.com/320/240?random=4"/>
+                <div>Interesting article 4</div>
+            </div>
         </div>
     </div>
     <div class="section">
