@@ -181,6 +181,24 @@
         .prompt {
             animation: bounce 3s linear 10s infinite;
         }
+
+        .main {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 40%;
+            overflow: hidden;
+            color: white;
+        }
+
+        .main .title {
+            position: absolute;
+            font-family: 'Dosis', 'Lato', sans-serif;
+            font-size: 2em;
+            bottom: 5%;
+            left: 5%;
+        }
     </style>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="lettering.js"></script>
@@ -199,7 +217,16 @@
         </svg>
     </div>
     <div class="section">
-        Stuff Prachi wanted!
+        <div class="main">
+            <img src="http://loremflickr.com/1366/500"/>
+            <div class="title">
+                <h2>Title</h2>
+                An interview with....
+            </div>
+        </div>
+        <div class="others">
+            Add some more layout!
+        </div>
     </div>
     <div class="section">
         <div class="slide">
