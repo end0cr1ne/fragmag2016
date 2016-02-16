@@ -38,7 +38,7 @@
             box-shadow: 0px 2px 5px #444444;
         }
 
-        .others{
+        .others {
             margin-top: 10%;
             font-family: 'Titillium Web', sans-serif;
         }
@@ -51,11 +51,13 @@
         .left {
             margin-right: 53%;
             margin-left: auto;
+            text-align: right;
         }
 
         .right {
             margin-left: 53%;
             margin-right: auto;
+            text-align: left;
         }
 
         .slide {
@@ -206,9 +208,36 @@
             bottom: 5%;
             left: 5%;
         }
-        
-        .interesting{
+
+        .interesting {
             margin: 2%;
+        }
+
+        @font-face {
+            font-family: kruti-021;
+            src: url(fonts/ufonts.com_kruti-dev-021.ttf);
+        }
+
+        @font-face {
+            font-family: kruti-692;
+            src: url(fonts/Kruti%20Dev%20692%20Normal.ttf);
+        }
+
+        .devnagiri {
+            font-family: kruti-021;
+            margin: 5px;
+            font-size: 12pt;
+        }
+
+        .devnagiri-title {
+            font-family: kruti-692;
+            margin: 5px;
+            font-size: 12pt;
+        }
+
+        #marathi {
+            background: url("images/Maarathi-01.png") no-repeat;
+            background-size: cover;
         }
     </style>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -220,17 +249,22 @@
     <div class="section">
         <div class="os-phrases">
             <h2>It's everything</h2>
+
             <h2>in between nothing</h2>
+
             <h2>KAIROS</h2>
         </div>
         <a href="#secondpage">
-        <svg class="prompt" height="100px" width="100px">
-            <polygon fill="#ffffff" points="23.1,34.1 51.5,61.7 80,34.1 81.5,35 51.5,64.1 21.5,35 23.1,34.1 "></polygon>
-        </svg></a>
+            <svg class="prompt" height="100px" width="100px">
+                <polygon fill="#ffffff"
+                         points="23.1,34.1 51.5,61.7 80,34.1 81.5,35 51.5,64.1 21.5,35 23.1,34.1 "></polygon>
+            </svg>
+        </a>
     </div>
     <div class="section" id="secondpage">
         <div class="main">
             <img src="images/sk.png"/>
+
             <div class="title">
                 <h2>Title</h2>
                 An interview with Sanjay Kalrani
@@ -239,15 +273,19 @@
 
         <div class="others">
             <div class="article interesting"><img src="http://loremflickr.com/320/240?random=1"/>
+
                 <div>Interesting article 1</div>
             </div>
             <div class="article interesting"><img src="http://loremflickr.com/320/240?random=2"/>
+
                 <div>Interesting article 2</div>
             </div>
             <div class="article interesting"><img src="http://loremflickr.com/320/240?random=3"/>
+
                 <div>Interesting article 3</div>
             </div>
             <div class="article interesting"><img src="http://loremflickr.com/320/240?random=4"/>
+
                 <div>Interesting article 4</div>
             </div>
         </div>
@@ -266,18 +304,22 @@
             <div class="articles">
                 <div class="article left">
                     <img src="http://loremflickr.com/320/240?random=1"/>
+
                     <div>Title</div>
                 </div>
                 <div class="article right">
                     <img src="http://loremflickr.com/320/240?random=2"/>
+
                     <div>Title</div>
                 </div>
                 <div class="article left">
                     <img src="http://loremflickr.com/320/240?random=3"/>
+
                     <div>Title</div>
                 </div>
                 <div class="article right">
                     <img src="http://loremflickr.com/320/240?random=4"/>
+
                     <div>Title</div>
                 </div>
             </div>
@@ -285,24 +327,28 @@
         <div class="slide">
             <div class="article" style="position: absolute;left: 40%">
                 <img src="http://loremflickr.com/320/240?random=1"/>
+
                 <div>Title</div>
             </div>
         </div>
         <div class="slide">
             <img src="http://loremflickr.com/320/240?random=1"/>
+
             <div>Title</div>
         </div>
         <div class="slide">
             <img src="http://loremflickr.com/320/240?random=1"/>
+
             <div>Title</div>
         </div>
         <div class="slide">
             <img src="http://loremflickr.com/320/240?random=1"/>
+
             <div>Title</div>
         </div>
     </div>
     <div class="section">
-        <div class="slide">
+        <div class="slide" id="marathi">
             <svg class="line">
                 <line x1="50%" x2="50%"
                       y1="2%" y2="98%"
@@ -312,18 +358,76 @@
                       stroke-dasharray=".001%, 2.5%">
                 </line>
             </svg>
-            <div class="articles">
-                <div class="article left"><img src="http://loremflickr.com/320/240?random=1"/>
-                    <div>Title</div>
+            <div class="articles devnagiri">
+                <div class="article left">
+                    <div class="devnagiri-title">,d uohu ÝWxeWx] vusd uos n`”Vhdks.k----</div>
+                    <div>vktdkyP;k ?kkbZ xMcMhP;k thoukr vkiya :Vhu Eg.kts [kk.ka] >ksi.ka] vH;kl dj.ka] OgkWVl~ vi
+                        dj.ka vkf.k fjihV----
+                    </div>
                 </div>
-                <div class="article right"><img src="http://loremflickr.com/320/240?random=2"/>
-                    <div>Title</div>
+                <div class="article right">
+                    <div class="devnagiri-title">vk;q”; lkja fo#u xsy-----</div>
+                    <div>lq[kkaekxs /kkork /kkork
+                        foosd iMrks xgk.k
+                        ik.;kr jkgwugh ek’kkph ex
+                        Hkkxr ukgh rgku----
+                    </div>
                 </div>
-                <div class="article left"><img src="http://loremflickr.com/320/240?random=3"/>
-                    <div>Title</div>
+                <div class="article left">
+                    <div class="devnagiri-title">rh lkatosG ----------- ,d dk;jksl!</div>
+                    <div>rh osG ekÖ;klkBh dk;jksl Bjyh ulrh( tj rh ,d ?kVuk ?kMyh ulrh----</div>
                 </div>
-                <div class="article right"><img src="http://loremflickr.com/320/240?random=4"/>
-                    <div>Title</div>
+                <div class="article right">
+                    <div class="devnagiri-title">---- vkf.k n`f”Vdksu cnyyk</div>
+                    <div>dkgh ?kVuk v’kk vlrkr dh R;k vkiY;k vk;q”;kyk iw.kZi.ks cnywu Vkdrkr vkf.k vkiY;kyk ,d let nsÅu
+                        tkrkr
+                    </div>
+                </div>
+                <div class="article left">
+                    <div class="devnagiri-title">,d {k.k -----</div>
+                    <div>[kwi egRRokpk vlrks izR;sd {k.k-----
+                        vk;q”; cny.;klkBh iqjslk vlrks ,d {k.k----
+                        vk;q”;kph ekrh ukgh rj lksua d: ‘kdrks ,d {k.k---
+                    </div>
+                </div>
+                <div class="article right">
+                    <div class="devnagiri-title">lksusjh izokl</div>
+                    <div>xsys dkgh fnol yiwu clysyk ikÅl dk dq.kkl BkÅd R;k fno’kh ek= /kks</div>
+                </div>
+                <div class="article left">
+                    <div class="devnagiri-title">rks vuqHko !-----</div>
+                    <div>dkWystps ‘ksoVps dkgh fnol---- dkWyst uarjP;k vk;q”;kpk fopkjns[khy djk;yk udksls okVrs-</div>
+                </div>
+                <div class="article right">
+                    <div class="devnagiri-title">‘ksoVpk izos’k !</div>
+                    <div>lk;adkGph osG gksrh] ,u-,l-,l-pk ‘ksoVpk fnol gksrk rks- ckgsjP;k vax.kkr loZ fo|kFkhZ tek
+                        >kys-
+                    </div>
+                </div>
+                <div class="article left">
+                    <div class="devnagiri-title">^^pansjh izdk’kkr vuqHkoysys okLrooknh {k.k**</div>
+                    <div>fp=iVkaph pansjh nqfu;k izs{kdkaps euksjatu djrs rs R;kauk ,dk LoIukaP;k nqfu;sr] ftFks vlrks
+                        Hkkoukapk mæsd] vokLrfod Fkjkj] let & xSjletkapk [ksG] dkSVqafcd o lkekftd dyg vkf.k R;koj
+                        dsysyh vfo’oluh; ekr!
+                    </div>
+                </div>
+                <div class="article right">
+                    <div class="devnagiri-title">vkBo.khrys rs {k.k----</div>
+                    <div>izR;sdkP;k vkBo.khr dkgh uk dkgh {k.k gs vlrkrp- ex gs {k.k O;DrhP;k thoukrys vlks fdaok
+                        jk”VªkP;k vFkok fo’okP;k bfrgklkrys vlks-
+                    </div>
+                </div>
+                <div class="article left">
+                    <div class="devnagiri-title">,d {k.k</div>
+                    <div>izR;sd ek.klkP;k thoukr vusd egRokps {k.k ;srkr- ijarq dkgh {k.k R;kps thou cnywu Vkdrkr-</div>
+                </div>
+                <div class="article right">
+                    <div class="devnagiri-title">^eukrwu meV.kkÚ;k okVk*</div>
+                    <div>igkVs igkVs vkjlk eyk [kq.korks]
+                        ekxY;k jk=hus [kqyoysys lkSan;Z ikg.;kl Hkqyorks
+                        vk/kh fnlrkr MksD;kiklwu ik;k i;Zarps Qjd]
+                        uarj feGrs Lor%’khp ijds vlY;kph ,d >yd---
+                    </div>
                 </div>
             </div>
         </div>
@@ -344,15 +448,19 @@
             </svg>
             <div class="articles">
                 <div class="article left"><img src="http://loremflickr.com/320/240?random=1"/>
+
                     <div>Title</div>
                 </div>
                 <div class="article right"><img src="http://loremflickr.com/320/240?random=2"/>
+
                     <div>Title</div>
                 </div>
                 <div class="article left"><img src="http://loremflickr.com/320/240?random=3"/>
+
                     <div>Title</div>
                 </div>
                 <div class="article right"><img src="http://loremflickr.com/320/240?random=4"/>
+
                     <div>Title</div>
                 </div>
             </div>
@@ -374,15 +482,19 @@
             </svg>
             <div class="articles">
                 <div class="article left"><img src="http://loremflickr.com/320/240?random=1"/>
+
                     <div>Title</div>
                 </div>
                 <div class="article right"><img src="http://loremflickr.com/320/240?random=2"/>
+
                     <div>Title</div>
                 </div>
                 <div class="article left"><img src="http://loremflickr.com/320/240?random=3"/>
+
                     <div>Title</div>
                 </div>
                 <div class="article right"><img src="http://loremflickr.com/320/240?random=4"/>
+
                     <div>Title</div>
                 </div>
             </div>
@@ -404,15 +516,19 @@
             </svg>
             <div class="articles">
                 <div class="article left"><img src="http://loremflickr.com/320/240?random=1"/>
+
                     <div>Title</div>
                 </div>
                 <div class="article right"><img src="http://loremflickr.com/320/240?random=2"/>
+
                     <div>Title</div>
                 </div>
                 <div class="article left"><img src="http://loremflickr.com/320/240?random=3"/>
+
                     <div>Title</div>
                 </div>
                 <div class="article right"><img src="http://loremflickr.com/320/240?random=4"/>
+
                     <div>Title</div>
                 </div>
             </div>
@@ -460,10 +576,10 @@
             recordHistory: true,
 
             //Design
-            controlArrows: false,
+            controlArrows: true,
             verticalCentered: true,
             resize: false,
-            sectionsColor: ['#2a2b30', '#222222', '#FF5252', '#4CAF50', '#009688', '#673AB7'],
+            sectionsColor: ['#2a2b30', '#222222', '#FF5252', '#555555', '#009688', '#673AB7'],
             paddingTop: '1px',
             paddingBottom: '1px',
             fixedElements: '#header, .footer',
