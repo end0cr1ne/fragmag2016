@@ -227,6 +227,8 @@
         .coll {
             background: rgba(255,255,255,0.7);
             padding: 2% 40vw;
+           /* max-height: 80vh;
+            max-width: 90vw;*/
             -webkit-columns: 60vw 1;
             -moz-columns: 60vw 1;
             columns: 60vw 1;
@@ -236,6 +238,8 @@
         .coll2 {
             background: rgba(255,255,255,0.7);
             padding: 2% 5%;
+            /*height: 80vh;
+            width: 90vw;*/
             -webkit-columns: 300px 2;
             -moz-columns: 300px 2;
             columns: 300px 2;
@@ -248,6 +252,8 @@
         .coll3 {
             background: rgba(255,255,255,0.7);
             padding: 2% 5%;
+          /*  max-height: 80vh;
+            max-width: 90vw;*/
             -webkit-columns: 200px 3;
             -moz-columns: 200px 3;
             columns: 200px 3;
@@ -348,6 +354,42 @@
 
             .os-phrases h2 > span {
                 margin: 0 5vh;
+            }
+
+            .coll {
+                background: rgba(255,255,255,0.7);
+                padding: 2% 40vw;
+                max-height: 90vh;
+                max-width: 90vw;
+                -webkit-columns: initial;
+                -moz-columns: initial;
+                columns: initial;
+                overflow-y: scroll;
+                box-shadow: 0px 2px 5px #444444;
+            }
+
+            .coll2 {
+                background: rgba(255,255,255,0.7);
+                padding: 2% 5%;
+                max-height: 90vh;
+                max-width: 90vw;
+                -webkit-columns: initial;
+                -moz-columns: initial;
+                columns: initial;
+                overflow-y: scroll;
+                box-shadow: 0px 2px 5px #444444;
+            }
+
+            .coll3 {
+                background: rgba(255,255,255,0.7);
+                padding: 2% 5%;
+                max-height: 90vh;
+                max-width: 90vw;
+                -webkit-columns: initial;
+                -moz-columns: initial;
+                columns: initial;
+                overflow-y: scroll;
+                box-shadow: 0px 2px 5px #444444;
             }
         }
 
@@ -1135,7 +1177,7 @@
             loopTop: false,
             loopHorizontal: true,
             continuousVertical: false,
-            normalScrollElements: '#element1, .element2',
+            normalScrollElements: '.coll, .coll2, .coll3',
             scrollOverflow: false,
             touchSensitivity: 15,
             normalScrollElementTouchThreshold: 5,
