@@ -9,6 +9,7 @@
     <style>
         @import url(https://fonts.googleapis.com/css?family=Lato:300);
         @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
         .line {
             position: absolute;
             top: 50%;
@@ -16,6 +17,7 @@
             transform: translate(-50%, -50%);
             height: 100%;
         }
+
         .articles {
             font-family: 'Titillium Web', sans-serif;
             display: flex;
@@ -28,34 +30,48 @@
             height: 100%;
             width: 100%;
         }
+
         .article {
             background: white;
             max-width: 40%;
+            max-height: 15%;
             padding: 1%;
             display: inline-block;
             box-shadow: 0px 2px 5px #444444;
         }
+
+        .article div {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
         .others {
             margin-top: 10%;
             font-family: 'Titillium Web', sans-serif;
         }
+
         .article img {
             background: white;
             height: 18vmin;
         }
+
         .left {
             margin-right: 53%;
             margin-left: auto;
             text-align: right;
         }
+
         .right {
             margin-left: 53%;
             margin-right: auto;
             text-align: left;
         }
+
         .slide {
             position: relative;
         }
+
         .os-phrases h2 {
             font-family: 'Dosis', 'Lato', sans-serif;
             font-size: 70px;
@@ -72,6 +88,7 @@
             letter-spacing: 14px;
             text-align: center;
         }
+
         .os-phrases h2,
         .os-phrases h2 > span {
             height: 100%;
@@ -80,6 +97,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .prompt {
             position: absolute;
             top: 80%;
@@ -88,14 +106,17 @@
             color: white;
             transform: translate(-50%, 0%);
         }
+
         .os-phrases h2 > span {
             margin: 0 15px;
         }
+
         .os-phrases h2 > span > span {
             display: inline-block;
             perspective: 1000px;
             transform-origin: 50% 50%;
         }
+
         @keyframes OpeningSequence {
             0% {
                 text-shadow: 0 0 50px #fff;
@@ -121,6 +142,7 @@
                 pointer-events: none;
             }
         }
+
         @keyframes OpeningSequence2 {
             0% {
                 text-shadow: 0 0 50px #fff;
@@ -140,6 +162,7 @@
                 transform: rotateY(0deg);
             }
         }
+
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {
                 opacity: 1.0;
@@ -154,6 +177,7 @@
                 transform: translate(-50%, 0%) translateY(-15px);
             }
         }
+
         .os-phrases h2 > span > span > span {
             display: inline-block;
             color: hsla(0, 0%, 0%, 0);
@@ -161,16 +185,20 @@
             transform: translate3d(0, 0, 0);
             animation: OpeningSequence 3s linear forwards;
         }
+
         .os-phrases h2:nth-child(2) > span > span > span {
             animation-delay: 4s;
         }
+
         .os-phrases h2:nth-child(3) > span > span > span {
             font-size: 150px;
             animation: OpeningSequence2 5.2s linear 8s forwards;
         }
+
         .prompt {
             animation: bounce 3s linear 10s infinite;
         }
+
         .main {
             position: absolute;
             top: 0%;
@@ -180,6 +208,7 @@
             overflow: hidden;
             color: white;
         }
+
         .main .title {
             position: absolute;
             font-family: 'Dosis', 'Lato', sans-serif;
@@ -187,88 +216,107 @@
             bottom: 5%;
             left: 5%;
         }
+
         .interesting {
             margin: 2%;
         }
+
         @font-face {
             font-family: kruti-021;
             src: url(fonts/ufonts.com_kruti-dev-021.ttf);
         }
+
         @font-face {
             font-family: kruti-692;
             src: url(fonts/Kruti%20Dev%20692%20Normal.ttf);
         }
-        .coll {
-            background: rgba(255, 255, 255, 0.7);
-            padding: 2% 40vw;
-            /* max-height: 80vh;
-             max-width: 90vw;*/
-            -webkit-columns: 60vw 1;
-            -moz-columns: 60vw 1;
-            columns: 60vw 1;
-            box-shadow: 0px 2px 5px #444444;
-        }
-        .coll2 {
-            background: rgba(255, 255, 255, 0.7);
-            padding: 2% 5%;
-            /*height: 80vh;
-            width: 90vw;*/
-            -webkit-columns: 300px 2;
-            -moz-columns: 300px 2;
-            columns: 300px 2;
-            column-gap: 5vw;
-            -webkit-column-gap: 5vw;
-            -moz-column-gap: 5vw;
-            box-shadow: 0px 2px 5px #444444;
-        }
-        .coll3 {
-            background: rgba(255, 255, 255, 0.7);
-            padding: 2% 5%;
-            /*  max-height: 80vh;
-              max-width: 90vw;*/
-            -webkit-columns: 200px 3;
-            -moz-columns: 200px 3;
-            columns: 200px 3;
-            column-gap: 4vw;
-            -webkit-column-gap: 4vw;
-            -moz-column-gap: 4vw;
-            box-shadow: 0px 2px 5px #444444;
-        }
+
         .devnagiri {
             font-family: kruti-021;
             margin: 5px;
             font-size: 14pt;
         }
+
         .devnagiri-title {
             font-family: kruti-692;
-            margin-bottom: 5px;
+            -webkit-column-span: all;
+            column-span: all;
             text-align: center;
             font-size: 18pt;
             color: darkslategray;
         }
+
         .english-title {
             font-family: 'Titillium Web', sans-serif;
-            margin-bottom: 5px;
+            -webkit-column-span: all;
+            column-span: all;
             text-align: center;
             font-size: 18pt;
             color: darkslategray;
         }
+
         .marathi {
             background: url("images/Maarathi-01.png") no-repeat;
             background-size: cover;
         }
+
         .marathi-author {
             color: #FF8000;
         }
+
         .english-author {
             color: firebrick;
         }
+
         .hindi-author {
             color: green;
         }
+
         .tech-author {
             color: darkblue;
         }
+
+        @media (min-width: 500px) {
+            .coll {
+                background: rgba(255, 255, 255, 0.7);
+                padding: 2% 40vw;
+                /* max-height: 80vh;
+                 max-width: 90vw;*/
+                -webkit-columns: 60vw 1;
+                -moz-columns: 60vw 1;
+                columns: 60vw 1;
+                box-shadow: 0px 2px 5px #444444;
+            }
+
+            .coll2 {
+                background: rgba(255, 255, 255, 0.7);
+                padding: 2% 5%;
+                /*height: 80vh;
+                width: 90vw;*/
+                -webkit-columns: 300px 2;
+                -moz-columns: 300px 2;
+                columns: 300px 2;
+                column-gap: 5vw;
+                -webkit-column-gap: 5vw;
+                -moz-column-gap: 5vw;
+                box-shadow: 0px 2px 5px #444444;
+            }
+
+            .coll3 {
+                background: rgba(255, 255, 255, 0.7);
+                padding: 2% 5%;
+                /*  max-height: 80vh;
+                  max-width: 90vw;*/
+                -webkit-columns: 200px 3;
+                -moz-columns: 200px 3;
+                columns: 200px 3;
+                column-gap: 4vw;
+                -webkit-column-gap: 4vw;
+                -moz-column-gap: 4vw;
+                box-shadow: 0px 2px 5px #444444;
+            }
+        }
+
         @media (max-width: 500px) {
             .article {
                 background: white;
@@ -277,6 +325,7 @@
                 display: inline-block;
                 box-shadow: 0px 2px 5px #444444;
             }
+
             .line {
                 position: absolute;
                 top: 50%;
@@ -284,16 +333,19 @@
                 transform: translate(-50%, -50%);
                 height: 100%;
             }
+
             .left {
                 margin-left: 5%;
                 margin-right: auto;
                 text-align: left;
             }
+
             .right {
                 margin-left: 5%;
                 margin-right: auto;
                 text-align: left;
             }
+
             .os-phrases h2 {
                 font-family: 'Dosis', 'Lato', sans-serif;
                 font-size: 10vw;
@@ -310,9 +362,11 @@
                 letter-spacing: 10px;
                 text-align: center;
             }
+
             .os-phrases h2:nth-child(3) > span > span > span {
                 font-size: 20vw;
             }
+
             .os-phrases h2 {
                 height: 100%;
                 display: flex;
@@ -320,6 +374,7 @@
                 justify-content: center;
                 align-items: center;
             }
+
             .os-phrases h2 > span {
                 height: 10%;
                 display: flex;
@@ -327,40 +382,38 @@
                 justify-content: center;
                 align-items: center;
             }
+
             .os-phrases h2 > span {
                 margin: 0 5vh;
             }
+
             .coll {
                 background: rgba(255, 255, 255, 0.7);
                 padding: 2% 40vw;
                 max-height: 90vh;
                 max-width: 90vw;
-                overflow: scroll;
-                -webkit-columns: 1;
-                -moz-columns: 1;
-                columns: 1;
+                overflow-y: scroll;
+
                 box-shadow: 0px 2px 5px #444444;
             }
+
             .coll2 {
                 background: rgba(255, 255, 255, 0.7);
                 padding: 2% 5%;
                 max-height: 90vh;
                 max-width: 90vw;
-                overflow: scroll;
-                -webkit-columns: 1;
-                -moz-columns: 1;
-                columns: 1;
+                overflow-y: scroll;
+
                 box-shadow: 0px 2px 5px #444444;
             }
+
             .coll3 {
                 background: rgba(255, 255, 255, 0.7);
                 padding: 2% 5%;
                 max-height: 90vh;
                 max-width: 90vw;
-                overflow: scroll;
-                -webkit-columns: 1;
-                -moz-columns: 1;
-                columns: 1;
+                overflow-y: scroll;
+
                 box-shadow: 0px 2px 5px #444444;
             }
         }
@@ -477,8 +530,9 @@
             </div>
         </div>
         <div class="slide">
+            <div class="coll2">
             <div class="english-title">From the editor's desk</div>
-            <div class="coll2">After umpteen brainstorming sessions and hours of deliberation, hoping to get our minds
+            <div>After umpteen brainstorming sessions and hours of deliberation, hoping to get our minds
                 fixated
                 on ‘the perfect’ theme for Fragmag 2016, we finally zeroed in on this beautiful word—‘Kairos’.
                 ‘Kairos’ is a Greek word denoting ‘the right or opportune moment’. According to ancient Greek
@@ -530,7 +584,7 @@
                 Folks!
                 <div class="english-author">Denise Pereira, Pearl Almeida</div>
             </div>
-
+            </div>
         </div>
         <div class="slide">
             <div class="english-title">THE RIGHT MOMENT</div>
@@ -2105,24 +2159,26 @@
         </div>
     </div>
     <div class="section" id="eng-4">
-        <svg class="line">
-            <line x1="50%" x2="50%"
-                  y1="2%" y2="98%"
-                  stroke="#212121"
-                  stroke-width="1%"
-                  stroke-linecap="round"
-                  stroke-dasharray=".001%, 2.5%">
-            </line>
-        </svg>
-        <div class="articles">
-            <div class="article left">
-                <div class="english-title">GONE?</div>
-            </div>
-            <div class="article right">
-                <div class="english-title">FREE FLOW</div>
-            </div>
-            <div class="article left">
-                <div class="english-title">YOUR WORDS</div>
+        <div class="slide">
+            <svg class="line">
+                <line x1="50%" x2="50%"
+                      y1="2%" y2="98%"
+                      stroke="#212121"
+                      stroke-width="1%"
+                      stroke-linecap="round"
+                      stroke-dasharray=".001%, 2.5%">
+                </line>
+            </svg>
+            <div class="articles">
+                <div class="article left">
+                    <div class="english-title">GONE?</div>
+                </div>
+                <div class="article right">
+                    <div class="english-title">FREE FLOW</div>
+                </div>
+                <div class="article left">
+                    <div class="english-title">YOUR WORDS</div>
+                </div>
             </div>
         </div>
         <div class="slide">
@@ -3295,7 +3351,8 @@
         </div>
         <div class="slide">
             <div class="english-title">“OF COURSE I AM AN
-                ATHLETE! I PLAY DotA.”</div>
+                ATHLETE! I PLAY DotA.”
+            </div>
             <div class="coll2">
                 Anyone with their fingers even
                 remotely close to the pulse of gaming knows
@@ -3373,12 +3430,14 @@
                 performance of these universal ones.
                 G.G.
                 <div class="tech-author">-Manish Jadhav
-                    T.E. Electronics</div>
+                    T.E. Electronics
+                </div>
             </div>
         </div>
         <div class="slide">
             <div class="english-title">VERSION CONTROL
-                – A NECESSITY FOR EVERY STUDENT</div>
+                – A NECESSITY FOR EVERY STUDENT
+            </div>
             <div class="coll2">
                 Clientside_v1_01.js, Clientside_v1_02.js,
                 Clientside_v1_AJAX.js, Clientside_v1_FINAL.
@@ -3444,7 +3503,8 @@
                 Version control is an essential skill that will
                 help us efficiently write and track a code.
                 <div class="tech-author">-Rajeev Ravindran
-                    T.E. Electronics</div>
+                    T.E. Electronics
+                </div>
             </div>
         </div>
         <div class="slide">
@@ -3658,12 +3718,14 @@
                 gave his valuable contribution to
                 make this project a success.
                 <div class="tech-author">-Yash M. Ved
-                    Aumini Batch 2012</div>
+                    Aumini Batch 2012
+                </div>
             </div>
         </div>
         <div class="slide">
             <div class="english-title">220 TB IN THE PALM OF YOUR
-                HAND</div>
+                HAND
+            </div>
             <div class="coll2">
                 The future of data storage is a pretty
                 ironic problem. Huge amounts of data is
@@ -3735,7 +3797,8 @@
                 only way the technology driven world
                 we live in keeps moving forward…
                 <div class="tech-author">-Glen D’mello
-                    T.E. Information Technology</div>
+                    T.E. Information Technology
+                </div>
             </div>
         </div>
         <div class="slide">
@@ -3804,7 +3867,8 @@
                 next future and the best alternate to the
                 fossil fuel driven engines.
                 <div class="tech-author">-Saurabh Mehta
-                    T.E. Production</div>
+                    T.E. Production
+                </div>
             </div>
         </div>
     </div>
@@ -3824,24 +3888,29 @@
                     <div class="english-title">LLECLAIR</div>
                     <div>A CROSS LAYER DESIGN METHODOLOGY
                         FOR EFFICIENT WIRELESS
-                        COMMUNICATION</div>
+                        COMMUNICATION
+                    </div>
                 </div>
                 <div class="article right">
                     <div class="english-title">PROJECT SOLI –
                         THE FUTURE OF GESTURE
-                        RECOGNITION</div>
+                        RECOGNITION
+                    </div>
                     <div>Our fingers are the most versatile
-                        tools we possess.</div>
+                        tools we possess.
+                    </div>
                 </div>
                 <div class="article left">
                     <div class="english-title">THE GOOD SIDE OF COPYING</div>
                     <div>STORY OF TWO FORGOTTEN
-                        ENTREPRENEURS</div>
+                        ENTREPRENEURS
+                    </div>
                 </div>
                 <div class="article right">
                     <div class="english-title">INTERNET OF THINGS</div>
                     <div>Imagine a shopping scenario, where in
-                        the market, goods introduce themselves.</div>
+                        the market, goods introduce themselves.
+                    </div>
                 </div>
                 <div class="article left">
                     <div class="english-title">WHERE IS YIFY?</div>
@@ -3849,7 +3918,8 @@
                         movie release group YIFY’s website became
                         unresponsive. For what torrent aficionados
                         thought it was a temporary issue, YIFY was
-                        gone for good.</div>
+                        gone for good.
+                    </div>
                 </div>
             </div>
         </div>
@@ -3857,7 +3927,8 @@
             <div class="english-title">LLECLAIR :
                 A CROSS LAYER DESIGN METHODOLOGY
                 FOR EFFICIENT WIRELESS
-                COMMUNICATION</div>
+                COMMUNICATION
+            </div>
             <div class="coll2">
                 In the LLECLAIR, ÉCLAIR protocol
                 works on the sender and receiver extreme
@@ -3947,13 +4018,15 @@
                 of the AWND window based on the values of
                 congestion measure, received rate and RTT.
                 <div class="tech-author">-Prof. Jay Borade
-                    Information Technology Department</div>
+                    Information Technology Department
+                </div>
             </div>
         </div>
         <div class="slide">
             <div class="english-title">PROJECT SOLI –
                 THE FUTURE OF GESTURE
-                RECOGNITION</div>
+                RECOGNITION
+            </div>
             <div class="coll2">
                 Our fingers are the most versatile
                 tools we possess. The ability to use
@@ -4020,13 +4093,15 @@
                 smarter & natural gesture recognition. The
                 future is indeed here, within our fingertips.
                 <div class="tech-author">-Rajeev Ravindran
-                    T.E. Electronics</div>
+                    T.E. Electronics
+                </div>
             </div>
         </div>
         <div class="slide">
             <div class="english-title">THE GOOD SIDE OF COPYING:
                 STORY OF TWO FORGOTTEN
-                ENTREPRENEURS</div>
+                ENTREPRENEURS
+            </div>
             <div class="coll2">
                 It was October 1938, in a rented room
                 above a bar in New York. Chestor Carlson was
@@ -4117,7 +4192,8 @@
                 courage to take the path less travelled and a
                 relentless belief in their purpose.
                 <div class="tech-author">-Yash Singh
-                    B.E. Electronics</div>
+                    B.E. Electronics
+                </div>
             </div>
         </div>
         <div class="slide">
@@ -4197,7 +4273,8 @@
                 “In a word, while the prospects are bright,
                 the road has twists and turns.”
                 <div class="tech-author">-Ruchita Robert Rozario
-                    S.E. Ccomputers</div>
+                    S.E. Ccomputers
+                </div>
             </div>
         </div>
         <div class="slide">
@@ -4325,7 +4402,8 @@
                 cash in on the void left by the demise of YIFY,
                 none of them which are as good as YIFY.
                 <div class="tech-author">-Sandesh Yapuram
-                    B.E. Information Technology</div>
+                    B.E. Information Technology
+                </div>
             </div>
         </div>
     </div>
