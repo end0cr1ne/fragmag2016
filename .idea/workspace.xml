@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cf75270-8cbd-4c46-a770-c0be515d1c2f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/fragmag2016emag.iml" afterPath="$PROJECT_DIR$/.idea/fragmag2016emag.iml" />
+      <change type="DELETED" beforePath="C:\Users\Varun\IdeaProjects\fragmag2016\images\Maarathi-01.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fragmag2016emag.iws" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5378422">
-              <caret line="2992" column="35" selection-start-line="2992" selection-start-column="35" selection-end-line="2992" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.41062802">
+              <caret line="270" column="13" selection-start-line="270" selection-start-column="13" selection-end-line="270" selection-end-column="13" />
               <folding>
                 <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -290,7 +289,7 @@
       <workItem from="1455989895580" duration="72000" />
       <workItem from="1456040586868" duration="8763000" />
       <workItem from="1456052945660" duration="528000" />
-      <workItem from="1456155934853" duration="2898000" />
+      <workItem from="1456155934853" duration="4005000" />
     </task>
     <task id="LOCAL-00001" summary="stuff">
       <created>1455047047668</created>
@@ -340,11 +339,17 @@
       <option name="project" value="LOCAL" />
       <updated>1456162389330</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="formatting">
+      <created>1456163141577</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1456163141578</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22432000" />
+    <option name="totallyTimeSpent" value="23539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -394,7 +399,8 @@
     <MESSAGE value="Added hindi" />
     <MESSAGE value="Added hindi and tech" />
     <MESSAGE value="added divs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added divs" />
+    <MESSAGE value="formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="formatting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -689,8 +695,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5378422">
-          <caret line="2992" column="35" selection-start-line="2992" selection-start-column="35" selection-end-line="2992" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.41062802">
+          <caret line="270" column="13" selection-start-line="270" selection-start-column="13" selection-end-line="270" selection-end-column="13" />
           <folding>
             <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
