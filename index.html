@@ -10,6 +10,10 @@
         @import url(https://fonts.googleapis.com/css?family=Lato:300);
         @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 
+        body {
+            background: #222222;
+        }
+
         .line {
             position: absolute;
             top: 50%;
@@ -47,7 +51,10 @@
         }
 
         .others {
-            margin-top: 10%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width:100%;
             font-family: 'Titillium Web', sans-serif;
         }
 
@@ -204,7 +211,7 @@
             top: 0%;
             left: 0%;
             width: 100%;
-            height: 40%;
+            height: 60%;
             overflow: hidden;
             color: white;
         }
@@ -430,10 +437,137 @@
                 box-shadow: 0px 2px 5px #444444;
             }
         }
+
+        a:link, a:visited, a:hover, a:active {
+            text-decoration: none; color: #fff;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            overflow: hidden;
+            margin: 0 0 0 -5%;
+            padding: 0;
+            height: 40vh;
+        }
+        .nav li {
+            display: flex;
+            margin: 0 0;
+            align-items: center;
+            justify-content: center;
+            min-width: 35%;
+            background: url("images/sk.png");
+            background-size: cover;
+            transition: all 0.3s;
+        }
+        .nav a {
+            display: block;
+            padding-top: 30%;
+            font-size: 32px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .nav li:hover {
+            box-shadow: 0px 20px 150px #444444;
+        }
+        .nav span {
+            display: block;
+        }
+
+        @media all and (min-width: 690px) {
+            .nav li {
+                margin: 0;
+                transform: skewX(-10deg);
+            }
+            .nav a {
+                padding: 30% 20px;
+                color: #fff;
+                background-color: transparent;
+            }
+            .nav a:hover {
+                color: #fff;
+            }
+            .nav span {
+                transform: skewX(10deg);
+            }
+        }
     </style>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="lettering.js"></script>
     <script src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                //Navigation
+                menu: '#menu',
+                lockAnchors: false,
+                anchors: ['firstPage', 'secondPage'],
+                navigation: false,
+                navigationPosition: 'right',
+                navigationTooltips: ['firstSlide', 'secondSlide'],
+                showActiveTooltip: false,
+                slidesNavigation: true,
+                slidesNavPosition: 'bottom',
+                //Scrolling
+                css3: true,
+                scrollingSpeed: 700,
+                autoScrolling: true,
+                fitToSection: true,
+                fitToSectionDelay: 1000,
+                scrollBar: false,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease',
+                loopBottom: false,
+                loopTop: false,
+                loopHorizontal: true,
+                continuousVertical: false,
+                normalScrollElements: '.coll, .coll2, .coll3',
+                scrollOverflow: false,
+                touchSensitivity: 15,
+                normalScrollElementTouchThreshold: 5,
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
+                //Design
+                controlArrows: true,
+                verticalCentered: true,
+                resize: false,
+                sectionsColor: ['#2a2b30', '#222222', '#EF342B', '#FFC301', '#217983', '#673AB7'],
+                paddingTop: '1px',
+                paddingBottom: '1px',
+                fixedElements: '#header, .footer',
+                responsiveWidth: 0,
+                responsiveHeight: 0,
+                //Custom selectors
+                sectionSelector: '.section',
+                slideSelector: '.slide',
+                //events
+                onLeave: function (index, nextIndex, direction) {
+                },
+                afterLoad: function (anchorLink, index) {
+                    var self = $(this);
+                    self.find('.line').addClass('animated fadeIn');
+                    self.find('.article.left').addClass('animated bounceInLeft');
+                    self.find('.article.right').addClass('animated bounceInRight');
+                    self.find('.line').show();
+                    self.find('.article').show();
+                },
+                afterRender: function () {
+                    var self = $(this);
+                    self.find('.line').hide();
+                    self.find('.article').hide();
+                },
+                afterResize: function () {
+                },
+                afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+                },
+                onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
+                }
+            });
+            $(".os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
+        });
+    </script>
 </head>
 <body>
 <div id="fullpage">
@@ -464,21 +598,12 @@
         </div>
 
         <div class="others">
-            <div class="article interesting"><img src="http://loremflickr.com/320/240?random=1"/>
-
-                <div>Interesting article 1</div>
-            </div>
-            <div class="article interesting"><img src="http://loremflickr.com/320/240?random=2"/>
-
-                <div>Interesting article 2</div>
-            </div>
-            <div class="article interesting"><img src="http://loremflickr.com/320/240?random=3"/>
-
-                <div>Interesting article 3</div>
-            </div>
-            <div class="article interesting"><img src="http://loremflickr.com/320/240?random=4"/>
-
-                <div>Interesting article 4</div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#"><span>Humans Of CRCE</span></a></li>
+                    <li><a href="#"><span>Interview</span></a></li>
+                    <li><a href="#"><span>Interview</span></a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -4558,78 +4683,5 @@
         </div>
     </div>
 </div>
-<script>
-    $(document).ready(function () {
-        $('#fullpage').fullpage({
-            //Navigation
-            menu: '#menu',
-            lockAnchors: false,
-            anchors: ['firstPage', 'secondPage'],
-            navigation: false,
-            navigationPosition: 'right',
-            navigationTooltips: ['firstSlide', 'secondSlide'],
-            showActiveTooltip: false,
-            slidesNavigation: true,
-            slidesNavPosition: 'bottom',
-            //Scrolling
-            css3: true,
-            scrollingSpeed: 700,
-            autoScrolling: true,
-            fitToSection: true,
-            fitToSectionDelay: 1000,
-            scrollBar: false,
-            easing: 'easeInOutCubic',
-            easingcss3: 'ease',
-            loopBottom: false,
-            loopTop: false,
-            loopHorizontal: true,
-            continuousVertical: false,
-            normalScrollElements: '.coll, .coll2, .coll3',
-            scrollOverflow: false,
-            touchSensitivity: 15,
-            normalScrollElementTouchThreshold: 5,
-            //Accessibility
-            keyboardScrolling: true,
-            animateAnchor: true,
-            recordHistory: true,
-            //Design
-            controlArrows: true,
-            verticalCentered: true,
-            resize: false,
-            sectionsColor: ['#2a2b30', '#222222', '#EF342B', '#FFC301', '#217983', '#673AB7'],
-            paddingTop: '1px',
-            paddingBottom: '1px',
-            fixedElements: '#header, .footer',
-            responsiveWidth: 0,
-            responsiveHeight: 0,
-            //Custom selectors
-            sectionSelector: '.section',
-            slideSelector: '.slide',
-            //events
-            onLeave: function (index, nextIndex, direction) {
-            },
-            afterLoad: function (anchorLink, index) {
-                var self = $(this);
-                self.find('.line').addClass('animated fadeIn');
-                self.find('.article.left').addClass('animated bounceInLeft');
-                self.find('.article.right').addClass('animated bounceInRight');
-                self.find('.line').show();
-                self.find('.article').show();
-            },
-            afterRender: function () {
-                var self = $(this);
-                self.find('.line').hide();
-                self.find('.article').hide();
-            },
-            afterResize: function () {
-            },
-            afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
-            },
-            onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
-            }
-        });
-        $(".os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
-    });
-</script>
 </body>
 </html>
