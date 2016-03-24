@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cf75270-8cbd-4c46-a770-c0be515d1c2f" name="Default" comment="formatting">
+    <list default="true" id="5cf75270-8cbd-4c46-a770-c0be515d1c2f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.6006441">
-              <caret line="3191" column="72" selection-start-line="3191" selection-start-column="72" selection-end-line="3191" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.14492753">
+              <caret line="3405" column="12" selection-start-line="3405" selection-start-column="12" selection-end-line="3405" selection-end-column="12" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -404,7 +404,7 @@
       <workItem from="1456052945660" duration="528000" />
       <workItem from="1456155934853" duration="4005000" />
       <workItem from="1458803204102" duration="296000" />
-      <workItem from="1458803519318" duration="5324000" />
+      <workItem from="1458803519318" duration="6779000" />
     </task>
     <task id="LOCAL-00001" summary="stuff">
       <created>1455047047668</created>
@@ -466,11 +466,17 @@
       <option name="project" value="LOCAL" />
       <updated>1456290629282</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="updated marathi">
+      <created>1458810843768</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1458810843768</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31377000" />
+    <option name="totallyTimeSpent" value="32832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -478,6 +484,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -520,7 +527,8 @@
     <MESSAGE value="Added hindi and tech" />
     <MESSAGE value="added divs" />
     <MESSAGE value="formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="formatting" />
+    <MESSAGE value="updated marathi" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated marathi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -589,8 +597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6006441">
-          <caret line="3191" column="72" selection-start-line="3191" selection-start-column="72" selection-end-line="3191" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.14492753">
+          <caret line="3405" column="12" selection-start-line="3405" selection-start-column="12" selection-end-line="3405" selection-end-column="12" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
