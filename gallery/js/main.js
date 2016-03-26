@@ -97,6 +97,7 @@ jQuery(document).ready(function($){
 		if( animationType == 'open') {
 			//hide the image in the gallery
 			parentListItem.addClass('empty-box');
+			$('.cd-slider .selected img').attr('src',image.attr('src'));
 			//place the quick view over the image gallery and give it the dimension of the gallery image
 			$('.cd-quick-view').css({
 			    "top": topSelected,

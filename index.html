@@ -512,79 +512,6 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="lettering.js"></script>
     <script src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#fullpage').fullpage({
-                //Navigation
-                menu: '#menu',
-                lockAnchors: false,
-                anchors: ['firstPage', 'secondPage'],
-                navigation: false,
-                navigationPosition: 'right',
-                navigationTooltips: ['firstSlide', 'secondSlide'],
-                showActiveTooltip: false,
-                slidesNavigation: true,
-                slidesNavPosition: 'bottom',
-                //Scrolling
-                css3: true,
-                scrollingSpeed: 700,
-                autoScrolling: true,
-                fitToSection: true,
-                fitToSectionDelay: 1000,
-                scrollBar: false,
-                easing: 'easeInOutCubic',
-                easingcss3: 'ease',
-                loopBottom: false,
-                loopTop: false,
-                loopHorizontal: true,
-                continuousVertical: false,
-                normalScrollElements: '.coll, .coll2, .coll3',
-                scrollOverflow: false,
-                touchSensitivity: 15,
-                normalScrollElementTouchThreshold: 5,
-                //Accessibility
-                keyboardScrolling: true,
-                animateAnchor: true,
-                recordHistory: true,
-                //Design
-                controlArrows: true,
-                verticalCentered: true,
-                resize: false,
-                sectionsColor: ['#2a2b30', '#222222', '#EF342B', '#FFC301', '#217983', '#673AB7'],
-                paddingTop: '1px',
-                paddingBottom: '1px',
-                fixedElements: '#header, .footer',
-                responsiveWidth: 0,
-                responsiveHeight: 0,
-                //Custom selectors
-                sectionSelector: '.section',
-                slideSelector: '.slide',
-                //events
-                onLeave: function (index, nextIndex, direction) {
-                },
-                afterLoad: function (anchorLink, index) {
-                    var self = $(this);
-                    self.find('.line').addClass('animated fadeIn');
-                    self.find('.article.left').addClass('animated bounceInLeft');
-                    self.find('.article.right').addClass('animated bounceInRight');
-                    self.find('.line').show();
-                    self.find('.article').show();
-                },
-                afterRender: function () {
-                    var self = $(this);
-                    self.find('.line').hide();
-                    self.find('.article').hide();
-                },
-                afterResize: function () {
-                },
-                afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
-                },
-                onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
-                }
-            });
-            $(".os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
-        });
-    </script>
 </head>
 <body>
 <div id="fullpage">
@@ -617,7 +544,7 @@
         <div class="others">
             <div class="nav">
                 <ul>
-                    <li><a href="#"><span>Humans Of CRCE</span></a></li>
+                    <li><a href="gallery/index.html"><span>Art Gallery</span></a></li>
                     <li><a href="#"><span>Interview</span></a></li>
                     <li><a href="#"><span>Interview</span></a></li>
                 </ul>
@@ -4720,9 +4647,78 @@
             </div>
         </div>
     </div>
-    <div class="section photos" id="photos-1">
-        <img class="pic" src="images/sk.png"/>
-    </div>
+    <script>
+
+        $('#fullpage').fullpage({
+            //Navigation
+            menu: '#menu',
+            lockAnchors: false,
+            anchors: ['firstPage', 'secondPage'],
+            navigation: false,
+            navigationPosition: 'right',
+            navigationTooltips: ['firstSlide', 'secondSlide'],
+            showActiveTooltip: false,
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+            //Scrolling
+            css3: true,
+            scrollingSpeed: 700,
+            autoScrolling: true,
+            fitToSection: true,
+            fitToSectionDelay: 1000,
+            scrollBar: false,
+            easing: 'easeInOutCubic',
+            easingcss3: 'ease',
+            loopBottom: false,
+            loopTop: false,
+            loopHorizontal: true,
+            continuousVertical: false,
+            normalScrollElements: '.coll, .coll2, .coll3',
+            scrollOverflow: false,
+            touchSensitivity: 15,
+            normalScrollElementTouchThreshold: 5,
+            //Accessibility
+            keyboardScrolling: true,
+            animateAnchor: true,
+            recordHistory: true,
+            //Design
+            controlArrows: true,
+            verticalCentered: true,
+            resize: false,
+            sectionsColor: ['#2a2b30', '#222222', '#EF342B', '#FFC301', '#217983', '#673AB7'],
+            paddingTop: '1px',
+            paddingBottom: '1px',
+            fixedElements: '#header, .footer',
+            responsiveWidth: 0,
+            responsiveHeight: 0,
+            //Custom selectors
+            sectionSelector: '.section',
+            slideSelector: '.slide',
+            //events
+            onLeave: function (index, nextIndex, direction) {
+            },
+            afterLoad: function (anchorLink, index) {
+                var self = $(this);
+                self.find('.line').addClass('animated fadeIn');
+                self.find('.article.left').addClass('animated bounceInLeft');
+                self.find('.article.right').addClass('animated bounceInRight');
+                self.find('.line').show();
+                self.find('.article').show();
+            },
+            afterRender: function () {
+                var self = $(this);
+                self.find('.line').hide();
+                self.find('.article').hide();
+            },
+            afterResize: function () {
+            },
+            afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+            },
+            onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
+            }
+        });
+        $(".os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
+    </script>
 </div>
 </body>
 </html>
