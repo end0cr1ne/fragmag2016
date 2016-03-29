@@ -488,6 +488,45 @@
             display: block;
         }
 
+        .beelex {
+            position:relative;
+            overflow:hidden;
+        }
+
+        .beelex img{
+            position: absolute;
+            top:50%;
+            left:0;
+            width:100%;
+            transform: translate(0,-50%);
+        }
+
+        .beelex pre{
+            position: absolute;
+            top: 0%;
+            left: 20vmin;
+            color: white;
+            width: 80%;
+            height: 90vh;
+            -moz-column-width:400px;
+            -moz-columns:400px;
+            -webkit-columns:400px;
+            columns: 400px;
+            -moz-column-gap: 2em;
+            -webkit-column-gap: 2em;
+            column-gap: 2em;
+            font-family: 'Dosis', 'Lato', sans-serif;
+        }
+        
+        .right.gradient {
+            position: absolute;
+            top:0;
+            left:0;
+            margin-left: 0;
+            width: 100%;
+            height:100%;
+            background: linear-gradient(to top right, rgba(0,0,0,0) ,rgba(0,0,0,1) 70%);
+        }
         @media all and (min-width: 690px) {
             .nav li {
                 margin: 0;
@@ -4647,16 +4686,88 @@
             </div>
         </div>
     </div>
+    <div class="section beelex">
+        <img src="images/beelex.png">
+        <div class="right gradient"></div>
+        <div class="slide">
+        <pre>
+            FLEX LIKE ELEX 2016
+The 8th of July, 2013 saw the assimilation of a group of souls who had taken up - in their opinion
+- the best form of engineering there was. Six semesters and umpteen subject abbreviations later, they
+realized they were right!
+This is the story of BE Electronics batch of 2016.
+Starting with the most scenic possible view on the 7th floor, SE Elex began its journey towards
+achieving a goal which it achieved only in Third Year.... A classroom of its own. For this batch has been
+tossed around classrooms like a table tennis ball in the 6th floor Gymkhana. And the addition of Diploma
+students in the month of August 2013 lent different shades to this group which was beginning to co-exist
+as friends and colleagues.
+Ours was the first batch to be graded by the University’s new CGPA system and boy did we
+rock it. So much so, that out of 10, our topper scored 10.04! Studying for exams was always a group
+effort. Even those who “cannot study out of eBooks” are seen staring at their mobile screens. The most
+nondescript of persons would be the first to ask teachers for question banks. As usual, each question will
+be tougher than the next. But that’s where we turn to our best friend...
+TECHMAX!! Also known as ‘This is probably the only book with which I will pass’. These books
+have probably saved more lives than disaster helplines. Hardcore reference book users (do they even
+exist?) cannot downplay the confidence they gain when they see the entire syllabus in one go.
+Assignments were given regularly by teachers, usually all subjects at the same time. But we take it up as
+a challenge (Read: One person takes it as a challenge) and complete it before you can say Ctrl+C and Ctrl+V.
+Submission days were like picnics and reams of assignment sheets were always present for ‘co-operative
+completion’. ‘This is such a pointless exercise’, he said, as he filled up another page of the assignment.
+        Vivas... This one word sends down shivers down each
+spine. The exam before the exam. And the one day we realise the importance of time.
+If you are one of the first to exit, be sure to give out sound bytes to your eager ‘fans’.
+Semester endings are usually celebrated with sailing parties. And if you don’t get this, you probably
+aren’t familiar with Bandstand.
+Councils – Groups of students teaming up to organise events and functions as a local college
+chapter of international organisations (Sometimes read as: Certi dude!). Elex 2016 has been at the
+forefront of every major council operating in the college. The core of the Students’ Council 2014-15 was
+from this class as was the IEEE Council of the same year. At the same time, the Project Cell was headed
+by members of Elex 2016, who participated in various technical competitions.
+        </pre>
+            </div>
+        <div class="slide">
+            <pre>
+Technical Teams – Groups of students teaming up to design and develop vehicular and robotic
+devices to compete in national and international level technical competitions (Sometimes read as: Certi
+dude!). E-Yantra, SAE Aero-Design, Baja, Supra, Robocon, Karting, Outback. There is an Elex footprint
+in each of these competitions. When we get going, stuff gets going. This also explains why our class is
+half-empty during lectures because somehow, all of us are busy at the same time.
+Projects are where we have shined since the start. From accelerometer-controlled gestures and
+colour sorting mechanisms to can-filling systems and eye-controlled wheelchairs, we have done it all. If
+you think your project is fancy, drop by our class and reassess.
+As for sports, we have represented the college in football and cricket at the University level,
+securing laurels at various inter-collegiate events.
+At the inter-class level, we have consistently finished in the top two for two consecutive years
+in cricket. At the same time, we have secured various medals in athletics and rink sports. And yes, we
+are the Tug-o-War Kings. In a college with a strong Production presence, that’s saying something. In
+badminton and chess too, we have finished in the top 4 consistently and have been in the reckoning for
+the Sports Trophy for two straight years.
+On the flipside, our football stats are legendary. Frankly, how else can you describe a three-year
+goalless drought! That’s right, this has to be a record that every class from now on wants to beat.
+Last but not the least, Euphoria!
+Elex 2016 has always participated in all events of Euphoria wholeheartedly, whether organising
+or competing. Along with the entire SE, we secured Best Dance in 2014 and won many other events.
+In fashion show too, we finished third in the year 2015 in our first attempt. It is not for nothing that our
+performances are looked forward to every year and this year too, we will be going out with a bang!
+A special mention of our Class (and Constant) Representative (Sorry can’t think of anything more).
+Now...
+Four years of assignments (a.k.a copy writing), examinations (like GoT Winters) and placements
+(TCS or Accenture?) later, did we achieve what we set out to? That’s another story altogether. Well,
+nothing more to ramble about, so...
+....For #OneLastTime... GO ELEX!
+        </pre>
+        </div>
+    </div>
     <script>
 
         $('#fullpage').fullpage({
             //Navigation
             menu: '#menu',
             lockAnchors: false,
-            anchors: ['firstPage', 'secondPage'],
+            anchors: ['landing', 'first','eng1','eng2','eng3','eng4','mar1','mar2','hin1','hin2','tech1','tech2','beelex'],
             navigation: false,
             navigationPosition: 'right',
-            navigationTooltips: ['firstSlide', 'secondSlide'],
+            navigationTooltips: ['landing', 'first','eng1','eng2','eng3','eng4','mar1','mar2','hin1','hin2','tech1','tech2','beelex'],
             showActiveTooltip: false,
             slidesNavigation: true,
             slidesNavPosition: 'bottom',
@@ -4682,7 +4793,7 @@
             animateAnchor: true,
             recordHistory: true,
             //Design
-            controlArrows: true,
+            controlArrows: false,
             verticalCentered: true,
             resize: false,
             sectionsColor: ['#2a2b30', '#222222', '#EF342B', '#FFC301', '#217983', '#673AB7'],
