@@ -581,10 +581,25 @@ a:link, a:visited, a:hover, a:active {
 .pstats .top {
     text-align: center;
     font-size: 2em;
+    color: white;
+    font-family: "Lato",sans-serif;
 }
 
 .pstats .head {
     text-align: center;
+    font-style: italic;
+    width: 60%;
+    margin: auto;
+    color: #67919c;
+    border-top: 1px solid #3e585f;
+    border-bottom: 1px solid #2C3E50;
+}
+
+.pstats .recruters .partners {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    margin: 0.5em;
 }
 
 @media all and (min-width: 690px) {
