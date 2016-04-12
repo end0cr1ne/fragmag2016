@@ -562,6 +562,7 @@ a:link, a:visited, a:hover, a:active {
 
 .recruterList {
     list-style: none;
+    padding: 0;
     -moz-column-count: 6;
     -moz-column-gap: 0px;
     -webkit-column-count: 6;
@@ -575,6 +576,15 @@ a:link, a:visited, a:hover, a:active {
     display: inline-block;
     margin-bottom: 0px;
     width: 100%;
+}
+
+.pstats .top {
+    text-align: center;
+    font-size: 2em;
+}
+
+.pstats .head {
+    text-align: center;
 }
 
 @media all and (min-width: 690px) {
