@@ -259,6 +259,14 @@ body {
     font-size: 18pt;
     color: darkslategray;
 }
+.interviewee{
+    font-family: 'Titillium Web', sans-serif;
+    -webkit-column-span: all;
+    column-span: all;
+    text-align: center;
+    font-size: 18pt;
+    color: cadetblue;
+}
 
 .marathi {
     background: url("images/Marathi2.png") no-repeat;
