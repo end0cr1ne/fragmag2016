@@ -324,9 +324,9 @@ body {
 @media (min-width: 500px) {
     .acheivements{
         padding: 2% 5%;
-        -webkit-columns: 35vw 2;
-        -moz-columns: 35vw 2;
-        columns: 35vw 2;
+        -webkit-columns: 40vw 2;
+        -moz-columns: 40vw 2;
+        columns: 40vw 2;
         column-gap: 5vw;
         -webkit-column-gap: 5vw;
         -moz-column-gap: 5vw;
@@ -566,7 +566,7 @@ a:link, a:visited, a:hover, a:active {
 .acheivement {
     /*width: 35%;*/
     background: #FF3333;
-    padding: 5px;
+    padding: 10px;
     margin-left: 1em;
     margin-bottom: 10px;
     color: black;
@@ -575,6 +575,10 @@ a:link, a:visited, a:hover, a:active {
 
 .ac .head {
     font-weight: bold;
+}
+
+.ac .sub{
+    font-size: small;
 }
 
 .ac .top {
@@ -654,4 +658,8 @@ a:link, a:visited, a:hover, a:active {
     .nav span {
         transform: skewX(10deg);
     }
+}
+
+ul{
+    padding: -20px;
 }
