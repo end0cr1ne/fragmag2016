@@ -136,23 +136,23 @@ header h1 {
   .cd-item {
     width: 48%;
     float: left;
-    margin: 0 4% 2em 0;
+    margin: 0 2% 2em 0;
   }
   .cd-item:nth-child(2n) {
-    margin-right: 0;
+    margin-right: 2%;
   }
 }
 @media only screen and (min-width: 1024px) {
   .cd-item {
     width: 22%;
     float: left;
-    margin: 0 4% 2.8em 0;
+    margin: 0 2% 2.8em 0;
   }
   .cd-item:nth-child(2n) {
     margin-right: 4%;
   }
   .cd-item:nth-child(4n) {
-    margin-right: 0;
+    margin-right: 2%;
   }
   .cd-item.empty-box::after {
     /* box visible as placeholder when the .cd-quick-view zooms in */
