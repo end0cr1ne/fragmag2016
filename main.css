@@ -572,6 +572,9 @@ a:link, a:visited, a:hover, a:active {
     color: black;
     border-radius: 4px;
     display: block;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
 
 .ac .head {
