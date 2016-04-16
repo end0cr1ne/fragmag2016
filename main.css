@@ -37,13 +37,20 @@ body {
     background: white;
     max-width: 40%;
     max-height: 15%;
-    padding: 1%;
     display: inline-block;
     box-shadow: 0px 2px 5px #444444;
 }
 
 .article div {
     overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.article .meta {
+    overflow: hidden;
+    padding: 5px;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -58,7 +65,7 @@ body {
 
 .article img {
     background: white;
-    height: 18vmin;
+    height: 14.5vh;
 }
 
 .left {
@@ -71,6 +78,14 @@ body {
     margin-left: 53%;
     margin-right: auto;
     text-align: left;
+}
+
+.article.right .img {
+    float: right;
+}
+
+.article.left .img {
+    float: left;
 }
 
 .slide {
@@ -259,7 +274,8 @@ body {
     font-size: 18pt;
     color: darkslategray;
 }
-.interviewee{
+
+.interviewee {
     font-family: 'Titillium Web', sans-serif;
     -webkit-column-span: all;
     column-span: all;
@@ -580,7 +596,7 @@ a:link, a:visited, a:hover, a:active {
     width: 1200px;
 }
 
-.recruterList img{
+.recruterList img {
     display: inline-block;
     margin-bottom: 0px;
     width: 100%;
@@ -590,7 +606,7 @@ a:link, a:visited, a:hover, a:active {
     text-align: center;
     font-size: 2em;
     color: white;
-    font-family: "Lato",sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 .pstats .head {
