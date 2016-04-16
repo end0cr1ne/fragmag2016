@@ -322,6 +322,15 @@ body {
 }
 
 @media (min-width: 500px) {
+    .acheivements{
+        padding: 2% 5%;
+        -webkit-columns: 35vw 2;
+        -moz-columns: 35vw 2;
+        columns: 35vw 2;
+        column-gap: 5vw;
+        -webkit-column-gap: 5vw;
+        -moz-column-gap: 5vw;
+    }
     .coll {
         background: rgba(255, 255, 255, 0.7);
         padding: 2% 40vw;
@@ -549,19 +558,19 @@ a:link, a:visited, a:hover, a:active {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9) 70%);
 }
 
-.acheivements {
+.acheivements {/*
     column-count: 2;
-    column-gap: 1em;
+    column-gap: 1em;*/
 }
 
 .acheivement {
-    width: 35%;
+    /*width: 35%;*/
     background: #FF3333;
-    padding-left: 5px;
+    padding: 5px;
     margin-left: 1em;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: black;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .ac .head {
