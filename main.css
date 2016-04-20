@@ -400,6 +400,12 @@ body {
         text-align: left;
     }
 
+    .acheivements {
+        overflow: scroll;
+        max-width: 100vw;
+        max-height:95vh;
+    }
+
     .os-phrases h2 {
         font-family: 'Dosis', 'Lato', sans-serif;
         font-size: 10vw;
@@ -558,9 +564,9 @@ a:link, a:visited, a:hover, a:active {
     background: #31B639;
 }
 
-.acheivements {/*
-    column-count: 2;
-    column-gap: 1em;*/
+.acheivements {
+    height:95vh;
+    overflow: scroll;
 }
 
 .acheivement {
@@ -568,13 +574,14 @@ a:link, a:visited, a:hover, a:active {
     background: #FF3333;
     padding: 10px;
     margin-left: 1em;
+    margin-right: 1em;
     margin-bottom: 10px;
     color: black;
     border-radius: 4px;
-    display: block;
+    /*display: block;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
-    break-inside: avoid;
+    break-inside: avoid;*/
 }
 
 .ac .head {
