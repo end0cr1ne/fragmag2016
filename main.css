@@ -596,10 +596,10 @@ a:link, a:visited, a:hover, a:active {
     margin-bottom: 10px;
     color: black;
     border-radius: 4px;
-    /*display: block;
+    display: block;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
-    break-inside: avoid;*/
+    break-inside: avoid;
 }
 
 hr{
