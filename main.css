@@ -322,7 +322,7 @@ body {
 }
 
 @media (min-width: 500px) {
-    .acheivements, .hall{
+    .acheivements, .hall2{
         padding: 2% 5%;
         -webkit-columns: 40vw 2;
         -moz-columns: 40vw 2;
@@ -330,6 +330,19 @@ body {
         column-gap: 5vw;
         -webkit-column-gap: 5vw;
         -moz-column-gap: 5vw;
+    }
+    .dummy{
+        height: 65vh;
+    }
+    .hall{
+        padding: 2% 5%;
+        -webkit-columns: 15vw 1;
+        -moz-columns: 15vw 1;
+        columns: 15vw 1;
+        column-gap: 5vw;
+        -webkit-column-gap: 5vw;
+        -moz-column-gap: 5vw;
+
     }
     .coll {
         background: rgba(255, 255, 255, 0.7);
@@ -404,6 +417,9 @@ body {
         overflow: scroll;
         max-width: 100vw;
         max-height:95vh;
+    }
+    .dummy{
+        visibility: hidden;
     }
 
     .os-phrases h2 {
@@ -584,14 +600,23 @@ a:link, a:visited, a:hover, a:active {
     break-inside: avoid;*/
 }
 
+hr{
+    color: black;
+    background-color: black;
+    border-color: black;
+}
+
 .fame-item{
-    background: steelblue;
+    background: goldenrod;
     padding: 10px;
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 10px;
     color: black;
     border-radius: 4px;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
 
 .ac .head {
