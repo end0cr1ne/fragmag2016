@@ -557,6 +557,15 @@ a:link, a:visited, a:hover, a:active {
     color: #000;
 }
 
+.article-img{
+    float: left;
+    padding: 16px;
+}
+
+.article-img img{
+    height: 25vh;
+}
+
 .nav ul {
     list-style: none;
     display: flex;
