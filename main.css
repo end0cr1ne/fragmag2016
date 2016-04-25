@@ -139,6 +139,10 @@ body {
     transform-origin: 50% 50%;
 }
 
+.long {
+    max-height: 90vh;
+    overflow-y: scroll;
+}
 @keyframes OpeningSequence {
     0% {
         text-shadow: 0 0 50px #fff;
