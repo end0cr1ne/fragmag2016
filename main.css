@@ -221,6 +221,30 @@ body {
     animation: bounce 3s linear 10s infinite;
 }
 
+.spl {
+    width:85%;
+    margin: auto;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.spl .coll2 {
+    background: transparent;
+    box-shadow: none;
+}
+
+.spl .intro-header-image img{
+    height: 70vh;
+    border: solid black 2px;
+    float: left;
+    margin-right: 2em;
+}
+
+.spl .intro-name {
+    font-size: 2em;
+    border-bottom: dotted black 1px;
+}
+
 .main {
     position: absolute;
     top: 0%;
