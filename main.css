@@ -222,6 +222,7 @@ body {
 }
 
 .spl {
+    background: rgba(255, 255, 255, 0.7);
     width:85%;
     margin: auto;
     max-height: 100vh;
@@ -229,7 +230,7 @@ body {
 }
 
 .spl .coll2 {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.7);;
     box-shadow: none;
 }
 
@@ -521,6 +522,7 @@ body {
     }
 
     .spl {
+        background: rgba(255, 255, 255, 0.7);
         padding: 2% 5%;
         margin: auto;
         max-height: 90vh;
@@ -529,7 +531,7 @@ body {
     }
 
     .spl .coll2 {
-        background: transparent;
+        background: rgba(255, 255, 255, 0.7);;
         box-shadow: none;
     }
 
