@@ -139,6 +139,10 @@ body {
     transform-origin: 50% 50%;
 }
 
+.long {
+    max-height: 90vh;
+    overflow-y: scroll;
+}
 @keyframes OpeningSequence {
     0% {
         text-shadow: 0 0 50px #fff;
@@ -706,20 +710,20 @@ hr{
 }
 
 .recruters {
-    width: 1200px;
+    width: 100vw;
     margin: 0 auto;
 }
 
 .recruterList {
     list-style: none;
     padding: 0;
-    -moz-column-count: 6;
-    -moz-column-gap: 0px;
-    -webkit-column-count: 6;
-    -webkit-column-gap: 0px;
-    column-count: 6;
+    -webkit-columns: 150px 6;
+    -moz-columns: 150px 6;
+    columns: 150px 6;
     column-gap: 0px;
-    width: 1200px;
+    max-width: 100vw;
+    max-height: 50vh;
+    overflow-y: scroll;
 }
 
 .recruterList img {
@@ -730,6 +734,7 @@ hr{
 
 .pstats .top {
     text-align: center;
+    margin-top: 10%;
     font-size: 2em;
     color: white;
     font-family: "Lato", sans-serif;
@@ -740,9 +745,11 @@ hr{
     font-style: italic;
     width: 60%;
     margin: auto;
+    padding: 5px;
     color: #67919c;
     border-top: 1px solid #3e585f;
     border-bottom: 1px solid #2C3E50;
+    background: rgba(255,255,255,0.7);
 }
 
 .pstats .recruters .partners {
